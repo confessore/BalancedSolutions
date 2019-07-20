@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{776E40AB-99C0-44CE-8C08-23D806E0B407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{6BABF1DC-D675-4098-B562-752E214EA9E2}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\add_services.sh = scripts\add_services.sh
+		scripts\disable_services.sh = scripts\disable_services.sh
+		scripts\enable_services.sh = scripts\enable_services.sh
+		scripts\remove_services.sh = scripts\remove_services.sh
+		scripts\update.sh = scripts\update.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4F9A4B89-2031-48E7-B7EE-2C5AEB835775}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{C51A9551-A3FD-42C1-80B0-37EDB757DAE9}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\services\balancedsolutions.web.service = scripts\services\balancedsolutions.web.service
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BalancedSolutions.Web", "src\BalancedSolutions.Web\BalancedSolutions.Web.csproj", "{7D640E40-522F-4EA7-8309-F94499009A3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D640E40-522F-4EA7-8309-F94499009A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D640E40-522F-4EA7-8309-F94499009A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D640E40-522F-4EA7-8309-F94499009A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D640E40-522F-4EA7-8309-F94499009A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C51A9551-A3FD-42C1-80B0-37EDB757DAE9} = {6BABF1DC-D675-4098-B562-752E214EA9E2}
+		{7D640E40-522F-4EA7-8309-F94499009A3A} = {776E40AB-99C0-44CE-8C08-23D806E0B407}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {162E43EA-FDE5-4042-8B73-FCA618A5DC24}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+[Unit]
+Description=Balanced Solutions Website
+
+[Service]
+WorkingDirectory=/var/aspnetcore/BalancedSolutions.Web
+ExecStart=/usr/bin/dotnet /var/aspnetcore/BalancedSolutions.Web/BalancedSolutions.Web.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=balancedsolutions.web
+User=root
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
