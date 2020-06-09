@@ -2,10 +2,10 @@
 
 sudo service balancedsolutions.web stop
 
-cd /home/orfasanti/balancedsolutions
+cd /home/$USER/balancedsolutions
 sudo git pull origin master
 
-cd /home/orfasanti/balancedsolutions/src/BalancedSolutions.Web
+cd /home/$USER/balancedsolutions/src/BalancedSolutions.Web
 sudo dotnet publish -c Release -o /var/aspnetcore/BalancedSolutions.Web
 
 sudo service balancedsolutions.web start

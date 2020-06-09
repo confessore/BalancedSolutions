@@ -1,8 +1,8 @@
-﻿using BalancedSolutions.Models;
+﻿using BalancedSolutions.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BalancedSolutions.Controllers
+namespace BalancedSolutions.Web.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,6 +1,4 @@
-using System;
-
-namespace BalancedSolutions.Models
+namespace BalancedSolutions.Web.Models
 {
     public class ErrorViewModel
     {
