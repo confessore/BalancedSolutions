@@ -2,27 +2,82 @@
     ViewData["Title"] = "Home";
 }
 
-    <div class="text-center">
-        <div class="text-center">
-            <a asp-area="" asp-controller="Home" asp-action="Desktop">
-                <i class="fa fa-desktop fa-5x"></i>
-                <h5 class="display-4">Desktop Applications</h5>
-            </a>
-            <p>From Windows Applications that never see the internet to Linux Services that handle tons of incoming client connections, we'll keep you rolling!</p>
+<div class="text-center">
+
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#mobile">
+                            <i class="fa fa-mobile fa-5x"></i>
+                            <h5 class="display-4">Mobile Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="text-center">
-            <a asp-area="" asp-controller="Home" asp-action="Mobile">
-                <i class="fa fa-mobile fa-5x"></i>
-                <h5 class="display-4">Mobile Applications</h5>
-            </a>
-            <p>With Android and iOS, there's an app for that... and if there isn't, we can make an app for that!</p>
+
+        <div id="mobile" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p>With Android and iOS, there's an app for that... and if there isn't, we can make an app for that!</p>
+                <a asp-area="" asp-controller="Home" asp-action="Mobile">Learn More</a>
+            </div>
         </div>
-        <div class="text-center">
-            <a asp-area="" asp-controller="Home" asp-action="Web">
-                <i class="fa fa-cloud fa-5x"></i>
-                <h5 class="display-4">Web Applications</h5>
-            </a>
-            <p>Whether you need a REST API that that your users can consume or something simple with a single page, we got you covered!</p>
-        </div>
-        <partial name="_Contact" />
+
     </div>
+
+    <hr />
+
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#web">
+                            <i class="fa fa-cloud fa-5x"></i>
+                            <h5 class="display-4">Web Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="web" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p>Whether you need something simple with a single page or a REST API that your users can consume, we've got you covered!</p>
+                <a asp-area="" asp-controller="Home" asp-action="Web">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#desktop">
+                            <i class="fa fa-desktop fa-5x"></i>
+                            <h5 class="display-4">Desktop Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="desktop" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p>From Linux services that handle tons of incoming client connections to Windows applications that never see the internet, we'll keep you rolling!</p>
+                <a asp-area="" asp-controller="Home" asp-action="Desktop">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
