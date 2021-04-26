@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Services";
+}
+
+<div class="text-center">
+
+    <!--Mobile-->
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#mobile">
+                            <i class="fa fa-mobile fa-5x"></i>
+                            <h5 class="display-4">Mobile Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <h4>With Android and iOS, there's an app for that... and if there isn't, we can make an app for that!</h4>
+                <h4><a asp-area="" asp-controller="Home" asp-action="Mobile">Learn More</a></h4>
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <!--Web-->
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#web">
+                            <i class="fa fa-cloud fa-5x"></i>
+                            <h5 class="display-4">Web Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="web" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <h4>Whether you need something simple with a single page or a REST API that your users can consume, we've got you covered!</h4>
+                <h4><a asp-area="" asp-controller="Home" asp-action="Web">Learn More</a></h4>
+            </div>
+        </div>
+
+    </div>
+    
+    <hr />
+
+    <!--Server-->
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#server">
+                            <i class="fa fa-server fa-5x"></i>
+                            <h5 class="display-4">Server Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="server" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <h4></h4>
+                <h4><a asp-area="" asp-controller="Home" asp-action="Server">Learn More</a></h4>
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <!--Desktop-->
+    <div>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel_title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#desktop">
+                            <i class="fa fa-desktop fa-5x"></i>
+                            <h5 class="display-4">Desktop Applications</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="desktop" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <h4>From Linux services that handle tons of incoming client connections to Windows applications that never see the internet, we'll keep you rolling!</h4>
+                <h4><a asp-area="" asp-controller="Home" asp-action="Desktop">Learn More</a></h4>
+            </div>
+        </div>
+
+    </div>
+
+</div>

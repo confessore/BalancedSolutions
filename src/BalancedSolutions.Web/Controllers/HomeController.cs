@@ -11,6 +11,12 @@ namespace BalancedSolutions.Web.Controllers
             return View();
         }
 
+        [Route("Services")]
+        public IActionResult Services()
+        {
+            return View();
+        }
+
         [Route("Desktop")]
         public IActionResult Desktop()
         {
